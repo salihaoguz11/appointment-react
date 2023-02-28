@@ -9,7 +9,13 @@ const Doctors = ({ doctors }) => {
         Our Doctors
       </h3>
       <Row>
-        <Col></Col>
+        {doctors.map((dr) => (
+          <Col>
+            <img src={dr.img} alt="dr.name" />
+            <h4>{dr.name}</h4>
+            <h5>{dr.dep}</h5>
+          </Col>
+        ))}
       </Row>
     </Container>
   );
