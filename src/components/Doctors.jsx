@@ -10,8 +10,8 @@ const Doctors = ({ doctors }) => {
       </h3>
       <Row>
         {doctors.map((dr) => (
-          <Col>
-            <img src={dr.img} alt="dr.name" />
+          <Col key={dr.id} sm={6} md={4} lg={3}>
+            <img src={dr.img} alt="dr.name" className="img-thumbnail" />
             <h4>{dr.name}</h4>
             <h5>{dr.dep}</h5>
           </Col>
