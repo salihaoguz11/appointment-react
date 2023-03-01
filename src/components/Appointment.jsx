@@ -16,7 +16,8 @@ const Appointment = ({ setAppointments, appointments }) => {
               <Col>
                 <h4>{patient}</h4>
                 <h5>{doctor}</h5>
-                <h6>{day.toDateString()}</h6>
+                <h6>{new Date().toLocaleDateString()}</h6>
+                <h6>{new Date().toLocaleTimeString()}</h6>
               </Col>
             </Row>
           </div>
