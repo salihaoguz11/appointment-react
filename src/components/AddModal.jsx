@@ -3,7 +3,13 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 
-export function AddModal({ handleClose, show, drName }) {
+export function AddModal({
+  handleClose,
+  show,
+  drName,
+  appointments,
+  setAppointments,
+}) {
   const [patientName, setPatientName] = useState("");
   const [date, setDate] = useState("");
   const handleSubmit = (e) => {
