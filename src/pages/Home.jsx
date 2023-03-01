@@ -16,7 +16,10 @@ const Home = () => {
         appointments={appointments}
         setAppointments={setAppointments}
       />
-      <Appointment />
+      <Appointment
+        appointments={appointments}
+        setAppointments={setAppointments}
+      />
     </main>
   );
 };
