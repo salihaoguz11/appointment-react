@@ -14,10 +14,20 @@ export function AddModal({
   const [date, setDate] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
+    setAppointments([
+      ...appointments,
+      {
+        id: appointments.length + 1,
+        patient: patientName,
+        day: date,
+        consulted: false,
+        doctor: drName,
+      },
+    ]);
 
     handleClose();
   };
-
+  console.log(appointments);
   return (
     <>
       <Modal show={show} onHide={handleClose}>
