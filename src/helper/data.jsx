@@ -17,7 +17,7 @@ export const appointmentData = [
     id: 3,
     patient: "Aaron Black",
     day: new Date(),
-    consulted: false,
+    consulted: true,
     doctor: "Dr. Jasmine Carpanter",
   },
 ];
