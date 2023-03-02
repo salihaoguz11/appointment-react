@@ -37,9 +37,9 @@ const Appointment = ({ setAppointments, appointments }) => {
                 <h6>{new Date(day).toLocaleDateString()}</h6>
                 <h6>{new Date(day).toLocaleTimeString()}</h6>
               </Col>
-              <Col>
+              <Col className="text-end">
                 <FaTimesCircle
-                  className="text-danger fs-3"
+                  className="text-danger fs-3 "
                   type="button"
                   onClick={() => handleDelete(id)}
                 />
