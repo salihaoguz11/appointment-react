@@ -7,29 +7,27 @@
 
 Project aims to create a Hospital Appointment App.
 
-## Problem Statement
 
-- We are adding a new project to our portfolios. So you and your colleagues have started to work on the project.
 
 ## Project Skeleton
 
 ```
-005 - Appointment App (folder)
+ Appointment App
 |
-|----readme.md         # Given to the students (Definition of the project)
+|----readme.md       
 SOLUTION
 ├── public
 │     └── index.html
 ├── src
 │    ├── components
-│    │       ├── HastaEkle.jsx
-│    │       │
-│    │       └── HastaListe.jsx
-│    │
+│    │       ├── AddModal.jsx
+│    │       │── Doctors.jsx
+│    │       |── Appointment.jsx            
+│    │         
 │    ├── helper
-│    │       └── Home.jsx
-│    │ 
-│    │ 
+│    │       └── data.jsx
+│    │── pages 
+│    │      └── Home.jsx
 │    ├── App.js
 │    ├── App.css
 │    ├── index.js
@@ -40,7 +38,7 @@ SOLUTION
 
 ## Expected Outcome
 
-![Project 005 Snapshot](./project.gif)
+![hospital-gif](hospital.gif)
 
 ## Objective
 
